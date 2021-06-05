@@ -1,0 +1,247 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Pen Script', cursive;
+  color: rgb(0, 0, 0);
+}
+
+body {
+  background: #b3c9ff;
+  overflow: hidden;
+}
+
+/* 중요부분 */
+.contentWrap {
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-80%, -80%);
+  transform-style: preserve-3d;
+  perspective: 800px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.contentWrap.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* 카드 윗면 */
+.contentWrap .front {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  background: #1a0336;
+  transform: rotateX(-10deg);
+  transform-origin: bottom center;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  border-radius: 10px 10px 0 0;
+}
+
+/* title 제목 */
+.contentWrap .front .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: url(../image/main/title.png) center top/200px no-repeat;
+  transform: translate3d(55px, 40px, 57px);
+}
+
+
+/* 종이 비행기 */
+/* 왼쪽 */
+.contentWrap .front .airplane1 {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  background: url(../image/main/airplane.png) center center/40px no-repeat;
+  transform: translate3d(120px, 60px, 30px);
+  opacity: .8;
+  z-index: 10;
+}
+
+/* 오른쪽 */
+.contentWrap .front .airplane2 {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  background: url(../image/main/airplane.png) center center/36px no-repeat;
+  transform: translate3d(300px, 90px, 40px);
+  opacity: .8;
+  z-index: 10;
+}
+
+
+
+/* cloud 3 제일 큰 구름 */
+.contentWrap .front .cloude3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 200px;
+  background: url(../image/main/cloud_3.png) right bottom/55% no-repeat;
+  transform: translate3d(-8px, 0, 26px);
+}
+
+/* cloude 2 제일 작은 구름 */
+.contentWrap .front .cloude2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 90%;
+  height: 200px;
+  background: url(../image/main/cloud_2.png) right bottom/100% no-repeat;
+  transform: translate3d(-20px, 0, 70px);
+}
+
+/* cloude 1 중간 구름 */
+.contentWrap .front .cloude1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  height: 200px;
+  background: url(../image/main/cloud_1.png) right bottom/75% no-repeat;
+  transform: translate3d(-10px, 0, 45px);
+}
+
+/* 드림 캐처 */
+.contentWrap .front .dreamcatcher {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background: url(../image/main/dreamcatcher.png) center center/100% no-repeat;
+  transform: translate3d(5px, -9px, 48px);
+}
+
+/*카드 밑면*/
+.contentWrap .back {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  background: linear-gradient(180deg, #d8d8d8, #fff);
+  border-radius: 0 0 10px 10px;
+  transform: rotateX(70deg);
+  transform-origin: top center;
+  transform-style: preserve-3d;
+  perspective: 800px;
+}
+
+/* 카드 밑 내용 */
+.contentWrap .back .msg {
+  position: absolute;
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 100;
+  top: 100px;
+  left: 0px;
+  transform-origin: bottom;
+  transform: translate3d(0px, 0px, 2px);
+  color: #000;
+}
+
+/* 카드 오른 쪽 끝 내용  */
+.contentWrap .back h3 {
+  position: absolute;
+  font-size: 12px;
+  text-align: right;
+  font-weight: 100;
+  right: 0px;
+  bottom: 0;
+  transform-origin: bottom;
+  transform: translate3d(-20px, 0px, 2px);
+  color: red;
+  font-family: 'Handlee', cursive, "Apple SD Gothic Neo", arial;
+}
+
+.login {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 550px;
+  left: -10px;
+  position: relative;
+ 
+}
+
+
+
+.button1 {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  
+
+  }
+
+.button1:hover {
+  background-color: #860090;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.sign {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 580px;
+  left: -10px;
+  position: relative;
+ 
+}
+
+
+
+.button2 {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  
+
+  }
+
+.button2:hover {
+  background-color: #220093;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
