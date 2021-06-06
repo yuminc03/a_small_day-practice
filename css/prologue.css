@@ -1,0 +1,166 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Pen Script', cursive;
+    color: rgb(0, 0, 0);
+}
+.container{
+    /* border: 1px solid red; */
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.fadein_1 {
+    /* border: 1px solid red; */
+    display: block;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    margin-top: 60px;
+    margin: 10px;
+    padding: 10px;
+    animation: fadein 3s;
+    -moz-animation: fadein 3s;
+    /* Firefox */
+    -webkit-animation: fadein 3s;
+    /* Safari and Chrome */
+    -o-animation: fadein 3s;
+    /* Opera */
+}
+.fadein_2 {
+    /* border: 1px solid red; */
+    display: block;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    margin: 10px;
+    padding: 10px;
+    animation: fadein 9s;
+    -moz-animation: fadein 9s;
+    -webkit-animation: fadein 9s;
+    -o-animation: fadein 9s;
+}
+.fadein_3 {
+    /* border: 1px solid red; */
+    display: block;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    margin: 10px;
+    padding: 10px;
+    animation: fadein 27s;
+    -moz-animation: fadein 27s;
+    -webkit-animation: fadein 27s;
+    -o-animation: fadein 27s;
+}
+.fadein_4 {
+    /* border: 1px solid red; */
+    display: block;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    margin: 10px;
+    padding: 10px;
+    animation: fadein 33s;
+    -moz-animation: fadein 33s;
+    -webkit-animation: fadein 33s;
+    -o-animation: fadein 33s;
+}
+.btn {
+    /* border: 1px solid red; */
+    display: block;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    margin: 10px;
+    padding: 10px;
+    animation: fadein 57s;
+    -moz-animation: fadein 57s;
+    -webkit-animation: fadein 57s;
+    -o-animation: fadein 57s;
+}
+
+.btn_next{
+    font-size: 40px;
+    width: 120px;
+    height: 60px;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: rgb(13, 131, 39);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+.btn_next:hover{
+    background-color: rgb(255, 255, 255);
+    transition: 0.6s;
+}
+h1 {
+    text-align: center;
+    font-size: 35px;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

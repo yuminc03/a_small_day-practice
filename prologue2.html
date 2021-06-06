@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 화면이 천천히 바뀌도록 -->
+    <meta http-equiv="page-enter" content="blendTrans(duration=0.6)">
+    <meta http-equiv="page-exit" content="blendTrans(duration=0.6)">
+
+    <!-- 폰트 불러오기 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+    <title>프폴로그</title>
+    <!-- 아이콘 -->
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon" sizes="180x180">
+    <!-- css, js연결 -->
+    <link rel="stylesheet" href="css/prologue2.css">
+    <script src="js/prologue2.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="fadein_1">
+            <h1>
+                안녕하십니까?
+            </h1>
+        </div>
+        <div class="fadein_2">
+            <h1>
+                소소한 하루에 오신걸 환영합니다.
+            </h1>
+        </div>
+        <div class="fadein_3">
+            <h1>
+                이곳에는 네 가지의 운세가 준비되어 있습니다.
+            </h1>
+        </div>
+        <div class="fadein_4">
+            <h1>
+                먼저 당신의 이름, 생년월일, 성별은 무엇인가요? 적어주세요.
+            </h1>
+        </div>
+        <div class="fadein_5">
+            <form class="form1">
+                <div class="name">
+                    <label for='full-name'>이름</label>
+                    <input type="text" id="full-name" name="full-name" value="소소한" size="10"/>
+                </div>
+                <div class="birth">
+                    <label for="birthday">
+                        <label for="birth_month">생년월일</label>
+                        <input type="text" id="birth_year" name="birth_year" value="2003" size="6"/>
+                        <select name="Month">
+                            <option value="1">1월</option>
+                            <option value="2">2월</option>
+                            <option value="3">3월</option>
+                            <option value="4">4월</option>
+                            <option value="5">5월</option>
+                            <option value="6">6월</option>
+                            <option value="7">7월</option>
+                            <option value="8">8월</option>
+                            <option value="9">9월</option>
+                            <option value="10">10월</option>
+                            <option value="11">11월</option>
+                            <option value="12">12월</option>
+                        </select>
+                        <input type="text" id="birth_date" value="1" size="3"/>
+                    </label>
+                </div>
+                <div class="gender">
+                    <input name="gender_type" type="radio" value="Man"/>
+                    <label id="gender_type_1" class="radio_label">남</label> 
+                    <input name="gender_type" type="radio" value="Woman"/>
+                    <label id="gender_type_2" class="radio_label">여</label>
+                </div>
+            </form>
+        </div>
+        <!-- <div class="btn">
+			<button class="btn_next" onclick="location.href='prologue2.html'">
+				<h2>다음</h2>
+			</button>
+		</div> -->
+    </div>
+
+</body>
+
+</html>
