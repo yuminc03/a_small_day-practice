@@ -49,13 +49,13 @@
             <form class="form1">
                 <div class="name">
                     <label for='full-name'>이름</label>
-                    <input type="text" id="full-name" name="full-name" value="소소한" size="10"/>
+                    <input type="text" id="full_name" name="full-name" value="소소한" size="10"/>
                 </div>
                 <div class="birth">
                     <label for="birthday">
                         <label for="birth_month">생년월일</label>
                         <input type="text" id="birth_year" name="birth_year" value="2003" size="6"/>
-                        <select name="Month">
+                        <select name="Month" id="birth_month">
                             <option value="1">1월</option>
                             <option value="2">2월</option>
                             <option value="3">3월</option>
@@ -75,9 +75,10 @@
                 <div class="gender">
                     <input name="gender_type" type="radio" value="Man"/>
                     <label id="gender_type_1" class="radio_label">남</label> 
-                    <input name="gender_type" type="radio" value="Woman"/>
+                    <input name="gender_type" type="radio" value="Woman" checked="checked"/>
                     <label id="gender_type_2" class="radio_label">여</label>
                 </div>
+                <button class="btn_submit" onclick="userInfo()">제출</button>
             </form>
         </div>
         <!-- <div class="btn">
