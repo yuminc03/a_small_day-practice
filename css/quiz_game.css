@@ -4,3 +4,109 @@
     font-family: 'Nanum Pen Script', cursive;
     color: rgb(0, 0, 0);
 }
+.container{
+    width: 70%;
+    height: 450px;
+    border: 5px solid rgb(185, 133, 235);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    top: 100px;
+    left: 15%;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(219, 189, 247);
+}
+.theme{
+    width: 35%;
+    height: 50px;
+    /* border: 1px solid red; */
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 40px;
+    margin: 10px;
+}
+.quiz{
+    width: 85%;
+    height: 100px;
+    /* border: 1px solid red; */
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 160px;
+    margin: 10px;
+}
+h1{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    color: rgb(60, 0, 128);
+}
+h2{
+    font-size: 35px;
+    display: block;
+    text-align: center;
+    color: rgb(60, 0, 128);
+}
+.write{
+    /* border: 1px solid red; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 350px;
+}
+.input{
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    font-size: 30px;
+    margin-right: 50px;
+}
+.submit{
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 3px solid rebeccapurple;
+    transition: 0.6s;
+}
+.submit:hover{
+    background-color: rebeccapurple;
+}
+.submit > h2{
+    color: rebeccapurple;
+    transition: 0.6s;
+}
+.submit:hover > h2{
+    color: #fff;
+}
+.next{
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 500px;
+    background-color: #fff;
+    border: 3px solid dodgerblue;
+    transition: 0.6s;
+    /* opacity: 0.7; */
+    visibility: hidden;
+}
+.next > h2{
+    color: dodgerblue;
+    transition: 0.6s;
+}
+.next:hover{
+    background-color: dodgerblue;
+}
+.next:hover > h2{
+    color: #fff;
+}

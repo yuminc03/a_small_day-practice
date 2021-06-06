@@ -175,7 +175,7 @@ body {
   top: 550px;
   left: -10px;
   position: relative;
- 
+
 }
 
 
@@ -196,14 +196,18 @@ body {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-  
 
-  }
+
+}
 
 .button1:hover {
   background-color: #860090;
   color: #fff;
   transform: translateY(-2px);
+}
+
+.button1:hover > h4{
+  color: #ffffff;
 }
 
 .sign {
@@ -214,10 +218,8 @@ body {
   top: 580px;
   left: -10px;
   position: relative;
- 
+
 }
-
-
 
 .button2 {
   width: 140px;
@@ -235,13 +237,12 @@ body {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-  
 
-  }
+
+}
 
 .button2:hover {
   background-color: #220093;
   color: #fff;
   transform: translateY(-2px);
 }
-

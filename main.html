@@ -7,7 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:image" content="/image/thumb.jpg" />
-  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
   <!-- 화면이 천천히 바뀌도록 -->
   <meta http-equiv="page-enter" content="blendTrans(duration=0.6)">
   <meta http-equiv="page-exit" content="blendTrans(duration=0.6)">
@@ -19,11 +21,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 
   <link rel="icon" href="image/favicon.ico" type="image/x-icon" sizes="180x180">
-  
+
   <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js"></script> 
 </head>
 
 <body>
+ 
   <!-- 3D 요소 -->
   <div class="contentWrap active">
     <div class="front">
@@ -54,14 +58,20 @@
       <p class="msg">하루하루 재미로 보는<br>소소한 하루</p>
       <h3>from. ^^</h3>
     </div>
+    
   </div>
 
   <!-- 시작 버튼 -->
   <div class="login">
     <a href="subject.html">
-      <button class="button1"><h4>시작하기</h4></button>
+      <button class="button1">
+        <h4>시작하기</h4>
+      </button>
     </a>
   </div>
+  
+ <!-- 배경 -->
+ <div id="gradient"></div>
 
 </body>
 

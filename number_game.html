@@ -30,8 +30,12 @@
 				<center>
 					<b>숫자 입력:
 						<INPUT TYPE="text" class=text1 NAME="guess" SIZE=5>
-						<button class="btn_try" value="" onClick="numberGame(); return false"><h2>맞추기</h2></button>
-						<button class="btn_quit" value="" onClick="GiveUp();"><h2>포기하기</h2></button>
+						<button class="btn_try" value="" onClick="numberGame(); return false">
+							<h2>맞추기</h2>
+						</button>
+						<button class="btn_quit" value="" onClick="GiveUp();">
+							<h2>포기하기</h2>
+						</button>
 					</b>
 				</center>
 			</FORM>
@@ -46,7 +50,9 @@
 				</center>
 			</FORM>
 			<br>
-			<button class="btn_explain" onclick="myFunction()"><h2>게임 설명서</h2></button>
+			<button class="btn_explain" onclick="myFunction()">
+				<h2>게임 설명서</h2>
+			</button>
 			<div id="myDIV">
 				<div class="menual" border="0" cellspacing="2" cellpadding="2">
 					<div class="top_box">
@@ -54,16 +60,19 @@
 					</div>
 					<div class="bottom_box">
 						<p>
-								1. 컴퓨터가 1부터 100까지의 임의로 정한 숫자를 맞추는 게임입니다.<BR>
-								2. 숫자를 입력하고 [맞추기] 버튼을 누르면 결과를 알려줍니다.<BR>
-								3. [도움말]에 나오는 문장을 통해 범위를 좁혀가면서 맞추세요.<BR>
-								4. 다시 하려면 [ReLoad] 버튼을 이용하세요.
+							1. 컴퓨터가 1부터 100까지의 임의로 정한 숫자를 맞추는 게임입니다.<BR>
+							2. 숫자를 입력하고 [맞추기] 버튼을 누르면 결과를 알려줍니다.<BR>
+							3. [도움말]에 나오는 문장을 통해 범위를 좁혀가면서 맞추세요.<BR>
+							4. 다시 하려면 [ReLoad] 버튼을 이용하세요.
 						</p>
 					</div>
 				</div>
 			</div><!--  class "myDIV" -->
-		</div><!--class "screen" -->
-	</div><!--class "container" -->
+		</div>
+		<!--class "screen" -->
+		<button onclick="currect()" class="next"><h2>운세보기!</h2></button>
+	</div>
+	<!--class "container" -->
 </body>
 
 </html>

@@ -147,3 +147,26 @@ p{
     visibility: hidden;
     transition: 0.4s;
 }
+.next{
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 500px;
+    background-color: #fff;
+    border: 3px solid dodgerblue;
+    transition: 0.6s;
+    /* opacity: 0.7; */
+    visibility: hidden;
+}
+.next > h2{
+    color: dodgerblue;
+    transition: 0.6s;
+}
+.next:hover{
+    background-color: dodgerblue;
+}
+.next:hover > h2{
+    color: #fff;
+}

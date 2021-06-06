@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>퀴즈 맞추기</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>퀴즈 맞추기</title>
 
-    <!-- 폰트 불러오기 -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+	<!-- 폰트 불러오기 -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 
-    <title>세 번째 스토리</title>
-    <!-- 아이콘 -->
-    <link rel="icon" href="image/favicon.ico" type="image/x-icon" sizes="180x180">
-    <!-- css, js연결 -->
-    <link rel="stylesheet" href="css/quiz_game.css">
-    <script src="js/quiz_game.js"></script>
+	<title>세 번째 스토리</title>
+	<!-- 아이콘 -->
+	<link rel="icon" href="image/favicon.ico" type="image/x-icon" sizes="180x180">
+	<!-- css, js연결 -->
+	<link rel="stylesheet" href="css/quiz_game.css">
+	<script src="js/quiz_game.js"></script>
 </head>
+
 <body>
-    
+	<div class="container">
+		<div class="theme">
+			<h1></h1>
+		</div>
+		<div class="quiz">
+			<h2></h2>
+		</div>
+		<div class="write"> 
+			<h2>답:</h2><input type="text" class="input" id="input" size="10">
+			<button onclick="submit()" class="submit"><h2>제출</h2></button>
+		</div>
+		<button onclick="currect()" class="next"><h2>운세보기!</h2></button>
+	</div>
 </body>
+
 </html>
